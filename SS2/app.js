@@ -120,8 +120,23 @@ while(điều kiện){
 */
 
 /// VD với bài toán: in ra các số từ 1 -> 10
+// let i = 1;
+// while (i <= 10) {
+//   console.log(i);// 1,2,3,... 10
+//   i = i + 1; //2,3,4, ... 11
+// }
+
+
+///// VD với vòng lặp do-while
 let i = 1;
-while (i <= 10) {
-  console.log(i);// 1,2,3,... 10
-  i = i + 1; //2,3,4, ... 11
+do {
+  console.log(i);// 1
+  i = i + 1;//2 || i++;
 }
+while (i <= 10);
+
+
+/*
+While: KTĐK => Lặp
+Do While: Lặp lần đầu  => KTĐK
+*/
