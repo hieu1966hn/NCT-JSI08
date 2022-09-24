@@ -70,14 +70,42 @@ Toán tử trong Javascript:
 
 
 //// VD với TTSS
-console.log(
-  1 === 2
-); // False
+// console.log(
+//   1 === 2
+// ); // False
 
-console.log(
-  1 == "1"
-); // True|| ==: So sánh tương đối (chỉ so sánh về giá trị, không so sánh về Kiểu dữ liệu)
-console.log(
-  2 === "2"
-); // False|| ===: So sánh tuyệt đối ( so sánh cả về giá trị và về Kiểu dữ liệu)
+// console.log(
+//   1 == "1"
+// ); // True|| ==: So sánh tương đối (chỉ so sánh về giá trị, không so sánh về Kiểu dữ liệu)
+// console.log(
+//   2 === "2"
+// ); // False|| ===: So sánh tuyệt đối ( so sánh cả về giá trị và về Kiểu dữ liệu)
+
+
+
+//// Câu điều kiện: dùng để kiểm tra điều kiện phù hợp 
+/*
+if(điều kiện kiểm tra){
+  ... lệnh trong if
+}
+else{
+.... lệnh trong else
+}
+
+VD với bài toán như sau:  Kiểm tra năm có phải là năm nhuận hay không biết rằng
+1. Năm nhuận là năm chia hết cho 4 nhưng không chia hết cho 100
+2. Năm nhuận là năm chi hết cho 400
+*/
+let nam1 = 2000;
+let nam2 = 2012;
+let nam3 = 2022;
+
+/// Bạn nào cũng phải làm nhé để anh kiểm tra kiến thức.
+if (nam2 % 4 === 0 && nam2 % 100 !== 0) {
+  console.log(`${nam2} là năm nhuận`);
+}
+else {
+  console.log(`${nam2} không là năm nhuận`);
+}
+
 
