@@ -96,16 +96,32 @@ VD với bài toán như sau:  Kiểm tra năm có phải là năm nhuận hay k
 1. Năm nhuận là năm chia hết cho 4 nhưng không chia hết cho 100
 2. Năm nhuận là năm chi hết cho 400
 */
-let nam1 = 2000;
-let nam2 = 2012;
-let nam3 = 2022;
+// let nam1 = 2000;
+// let nam2 = 2012;
+// let nam3 = 2022;
 
-/// Bạn nào cũng phải làm nhé để anh kiểm tra kiến thức.
-if (nam2 % 4 === 0 && nam2 % 100 !== 0) {
-  console.log(`${nam2} là năm nhuận`);
+// /// Bạn nào cũng phải làm nhé để anh kiểm tra kiến thức.
+// if (nam2 % 4 === 0 && nam2 % 100 !== 0) {
+//   console.log(`${nam2} là năm nhuận`);
+// }
+// else {
+//   console.log(`${nam2} không là năm nhuận`);
+// }
+
+
+
+///// Vòng lặp
+/*
+3 vòng lặp cơ bản: while, do while, for
+- Cú pháp while:
+while(điều kiện){
+  ... Thực hiện lệnh
 }
-else {
-  console.log(`${nam2} không là năm nhuận`);
+*/
+
+/// VD với bài toán: in ra các số từ 1 -> 10
+let i = 1;
+while (i <= 10) {
+  console.log(i);// 1,2,3,... 10
+  i = i + 1; //2,3,4, ... 11
 }
-
-
