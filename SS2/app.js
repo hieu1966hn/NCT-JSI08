@@ -50,7 +50,7 @@ Cú pháp khai báo biến: let/ var/ const
 
 
 /*
-Toán tử trong Javascript: 
+Toán tử trong Javascript:
 0. Toán tử gán: =
 1. Toán tử số học: +, -, *, /, %
 2. Toán tử so sánh: >,<, >=,<=, ==, ===
@@ -155,7 +155,44 @@ for(box1; box2; box3){
 
 */
 
-for (let i = 1; i <= 10; i = i + 1) {
-  console.log(i);// 1,2,3,... 10
+// for (let i = 1; i <= 10; i = i + 1) {
+//   console.log(i);// 1,2,3,... 10
 
+// }
+
+
+
+
+/*
+Ôn tập về mảng: danh sách => dùng để lưu trữ dữ liệu và truy vấn dữ liệu
+- Cú pháp khai báo mảng: 
+
+
+*/
+
+//// Khai báo mảng rỗng
+let arr = [];
+
+/// KHai báo mảng có phần tử:
+let arr1 = ["hello", "hi", 123, 456];
+
+
+/// Thêm phần tử vào mảng arr: push("nội dung thêm")
+arr.push("chao", "Xin chào", 123456789);
+
+/// Duyệt mảng: sử dụng vòng lặp
+for (let i = 0; i < arr.length; i = i + 1) {
+  // console.log(arr[i]); /// In ra từng phần tử của mảng
 }
+
+/// Update phần tử của mảng: 123456789 => 123
+arr[2] = 123;
+
+
+/// Delete phần tử mảng: splice(box1, box2, box3)
+/*
+Box1: vị trí phần tử mảng 
+box2: số phần tử muốn xóa từ vị trí đó
+box3: phần tử muốn chèn vào tại vị trí đó
+*/
+arr.splice(2, 1)
