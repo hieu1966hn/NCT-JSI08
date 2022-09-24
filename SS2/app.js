@@ -128,15 +128,34 @@ while(điều kiện){
 
 
 ///// VD với vòng lặp do-while
-let i = 1;
-do {
-  console.log(i);// 1
-  i = i + 1;//2 || i++;
-}
-while (i <= 10);
+// let i = 1;
+// do {
+//   console.log(i);// 1
+//   i = i + 1;//2 || i++;
+// }
+// while (i <= 10);
 
 
 /*
 While: KTĐK => Lặp
 Do While: Lặp lần đầu  => KTĐK
 */
+
+/*
+Vòng lặp for: Cú pháp
+
+for(box1; box2; box3){
+  câu lệnh....
+}
+
+
+- box1: Câu lệnh chạy lần đầu tiên và duy nhất vòng for
+- box2: Kiểm tra điều kiện (điều kiện dừng vòng lặp)
+- box3: Câu lệnh chạy cuối cùng của mỗi lần lặp
+
+*/
+
+for (let i = 1; i <= 10; i = i + 1) {
+  console.log(i);// 1,2,3,... 10
+
+}
