@@ -37,3 +37,14 @@ Buổi 3:
 // }
 
 
+
+////// Vi dụ vể hàm split: Tách 
+// let num = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// let str = "1,2,3,4,5,6,7,8,9,10";
+// let result = str.split(",")
+// console.log("result: ", result);// => num nhưng ở dạng chuỗi
+
+
+
+
+
