@@ -24,7 +24,7 @@ Buổi 3:
 
 
 // const query = document.querySelector("#demo")
-// query.innerHTML = "chao xin"
+// query.innerHTML= "chao xin"
 // console.log("query: ", query);
 
 // VD về reduce:
