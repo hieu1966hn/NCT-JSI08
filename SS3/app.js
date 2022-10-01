@@ -54,13 +54,30 @@ Buổi 3:
 
 /// Map: là cú pháp dùng để thao tác với từng phần tử trong mảng theo 1 điều kiện nhất định => Kq là 1 mảng mới đã thực hiện câu lệnh đó
 //// Đề bài: Gấp đôi từng phần tử mảng.
-let arr = [1, 4, 8, 10];
-/// C1:
-// for (let i = 0; i < arr.length; i++) {// duyệt từng phần tử mảng
-//   arr[i] = arr[i] * 2
-// }
-// console.log("arr: ", arr);
+// let arr = [1, 4, 8, 10];
+// /// C1:
+// // for (let i = 0; i < arr.length; i++) {// duyệt từng phần tử mảng
+// //   arr[i] = arr[i] * 2
+// // }
+// // console.log("arr: ", arr);
 
-//// C2: sử dụng map
-let arr2 = arr.map(item => item * 2)// [2, 8, 16, 20]
+// //// C2: sử dụng map
+// let arr2 = arr.map(item => item * 2)// [2, 8, 16, 20]
+// console.log("arr2: ", arr2);
+
+
+///// Filter: Lọc mảng => kết quả trả về là 1 mảng mới thỏa mãn điều kiện lọc
+let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+//// Đề bài: Lọc ra những số lẻ trong mảng:
+///// C1: dùng for
+// let arr2 = []; // mảng rỗng 
+// for (let i = 0; i < arr.length; i++) {
+//   if (arr[i] % 2 != 0) {
+//     arr2.push(arr[i]);
+//   }
+// }
+// console.log("arr2: ", arr2);
+
+////// C2: Dùng filter
+let arr2 = arr.filter(item => item % 2 != 0)// => mảng mới toàn số lẻ
 console.log("arr2: ", arr2);
