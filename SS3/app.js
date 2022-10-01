@@ -46,7 +46,21 @@ Buổi 3:
 
 
 
-/////// Slice: 
-const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
-const citrus = fruits.slice(1, 3);// => Cắt mảng: (hs1, hs2): hs1 => vị trí bắt đầu cắt mảng. hs2 => vị trí kết thúc cắt mảng
-console.log("citrus: ", citrus);
+/////// Slice: cắt mảng
+// const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+// const citrus = fruits.slice(1, 3);// => Cắt mảng: (hs1, hs2): hs1 => vị trí bắt đầu cắt mảng. hs2 => vị trí kết thúc cắt mảng
+// console.log("citrus: ", citrus);
+
+
+/// Map: là cú pháp dùng để thao tác với từng phần tử trong mảng theo 1 điều kiện nhất định => Kq là 1 mảng mới đã thực hiện câu lệnh đó
+//// Đề bài: Gấp đôi từng phần tử mảng.
+let arr = [1, 4, 8, 10];
+/// C1:
+// for (let i = 0; i < arr.length; i++) {// duyệt từng phần tử mảng
+//   arr[i] = arr[i] * 2
+// }
+// console.log("arr: ", arr);
+
+//// C2: sử dụng map
+let arr2 = arr.map(item => item * 2)// [2, 8, 16, 20]
+console.log("arr2: ", arr2);
