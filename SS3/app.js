@@ -67,7 +67,7 @@ Buổi 3:
 
 
 ///// Filter: Lọc mảng => kết quả trả về là 1 mảng mới thỏa mãn điều kiện lọc
-let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 //// Đề bài: Lọc ra những số lẻ trong mảng:
 ///// C1: dùng for
 // let arr2 = []; // mảng rỗng 
@@ -79,5 +79,17 @@ let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 // console.log("arr2: ", arr2);
 
 ////// C2: Dùng filter
-let arr2 = arr.filter(item => item % 2 != 0)// => mảng mới toàn số lẻ
-console.log("arr2: ", arr2);
+// let arr2 = arr.filter(item => item % 2 != 0)// => mảng mới toàn số lẻ
+// console.log("arr2: ", arr2);
+
+
+
+///// Find: Tìm giá trị đầu tiên thỏa mãn điều kiện muốn tìm và in ra nó
+const array1 = [5, 12, 8, 130, 44];
+
+const found = array1.find(item => item > 10);
+
+console.log(found);
+// expected output: 12
+
+
