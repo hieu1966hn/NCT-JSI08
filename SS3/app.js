@@ -46,5 +46,7 @@ Buổi 3:
 
 
 
-
-
+/////// Slice: 
+const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+const citrus = fruits.slice(1, 3);// => Cắt mảng: (hs1, hs2): hs1 => vị trí bắt đầu cắt mảng. hs2 => vị trí kết thúc cắt mảng
+console.log("citrus: ", citrus);
