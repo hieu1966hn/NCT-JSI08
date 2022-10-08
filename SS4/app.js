@@ -67,21 +67,66 @@ Sử dụng map() với arr = [1,54,6,7]
 
 ///// Chữa bài 3: 
 /*
-Cho array sau: 
-m = [1,2,4,5,6,7]; 
-n = [3,5,675,8,96]. 
-Hãy viết một hàm, duyệt cả các mảng m và n; 
+Cho array sau:
+m = [1,2,4,5,6,7];
+n = [3,5,675,8,96].
+Hãy viết một hàm, duyệt cả các mảng m và n;
 loại bỏ đi phần tử có giá trị bằng 1, 8,10,96,7.
 
 */
-let m = [1, 2, 4, 5, 6, 7];
-let n = [3, 5, 675, 8, 96];
+// let m = [1, 2, 4, 5, 6, 7];
+// let n = [3, 5, 675, 8, 96];
 
-function boGiaTri(arr) {
-  return arr.filter(item => ![1, 8, 10, 96, 7].includes(item))
+// function boGiaTri(arr) {
+//   return arr.filter(item => ![1, 8, 10, 96, 7].includes(item))
 
+// }
+
+// console.log(
+//   boGiaTri(n)
+// );
+
+
+
+////// Bài 4:
+/*
+Cho array 1 như sau: players = [
+{ id: 11, name: 'Messi', age: 33 },
+{ id: 12, name: 'Ronaldo', age: 34 },
+{ id: 13, name: 'Young', age: 35 },
+{ id: 14, name: 'Mane', age: 21 },
+{ id: 15, name: 'Salah', age: 24 },
+]
+
+output:
+playersModified =
+{
+    11: {id: 11, name: "Messi", age: 33},
+    12: {id: 12, name: "Ronaldo", age: 34},
+    13: {id: 13, name: "Young", age: 35},
+    14: {id: 14, name: "Mane", age: 21},
+    15: {id: 15, name: "Salah", age: 24}
 }
 
-console.log(
-  boGiaTri(n)
-);
+Note: Dùng reduce
+*/
+
+
+//////// Lập trình hướng đối tượng: OOP - Object Oriented Programming)
+///////  Khởi tạo classes: => đơn giản giống như ta đang định nghĩa 1 KDL mới trong dự án
+class Person {
+
+  walk() {
+    alert("Tôi đang đi bộ trên đường Trường Sơn");
+  }
+
+  sleep() {
+    alert("Quỳnh Như đang ngủ đấy, đừng dại gọi nhé")
+  }
+}
+
+let QuynhNhu = new Person();
+QuynhNhu.walk();
+QuynhNhu.sleep();
+
+
