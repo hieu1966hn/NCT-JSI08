@@ -27,6 +27,27 @@ Buổi 3 học gì?
 
 
 ////// Đề bài lọc ra toàn bộ phần tử mảng có giá trị lớn hơn 10 biết
-let arr = [1, 34, 40, 0, 9, 4, 100];// [34,40,100]
-let newArrFilter = arr.filter(item => item > 10);
-console.log("newArrFilter: ", newArrFilter);
+// let arr = [1, 34, 40, 0, 9, 4, 100];// [34,40,100]
+// let newArrFilter = arr.filter(item => item > 10);
+// console.log("newArrFilter: ", newArrFilter);
+
+
+
+
+///////////// Chữa BTVN
+//// Bài 1: 
+/*
+Cho 2 mảng sau: arr1 = [1,2,4,5,6]; arr2 = [1.6.8.9.0]. 
+Hãy lọc ra một mảng mới chứa 2 phần tử trùng nhau của 2 mảng cho bên trên. 
+(sử dụng filter() )
+ */
+
+let arr1 = [1, 2, 4, 5, 6];
+let arr2 = [1, 6, 8, 9, 0];
+let arr3 = arr1.filter(item => arr2.includes(item));/// true/falsev => true, false, false, ..., true 
+console.log("arr3: ", arr3); // [1, 6]
+
+
+// console.log(
+//   arr2.includes(10)
+// );
