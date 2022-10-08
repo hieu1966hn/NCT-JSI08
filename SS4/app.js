@@ -23,3 +23,10 @@ Buổi 3 học gì?
 // let arr = [1, 2, 3, 4, 5]; // [5,10,15,20,25]
 // let arrMap = arr.map(item => item *5);// [5,10,15,20,25]
 // console.log("arrMap: ", arrMap);
+
+
+
+////// Đề bài lọc ra toàn bộ phần tử mảng có giá trị lớn hơn 10 biết
+let arr = [1, 34, 40, 0, 9, 4, 100];// [34,40,100]
+let newArrFilter = arr.filter(item => item > 10);
+console.log("newArrFilter: ", newArrFilter);
