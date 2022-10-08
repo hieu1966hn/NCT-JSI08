@@ -95,16 +95,16 @@ Buổi 3:
 
 
 ///// indexOf: Hiển thị vị trí phần tử muốn tìm trong mảng
-let arr = [5, 12, 8, 130, 8, 44, "Hello", 8];
-//// Đề bài Tìm vị trí phần tử nào có giá trị lớn hơn 100
-// console.log(
-//   arr.indexOf(8, 3)
-// )
+// let arr = [5, 12, 8, 130, 8, 44, "Hello", 8];
+// //// Đề bài Tìm vị trí phần tử nào có giá trị lớn hơn 100
+// // console.log(
+// //   arr.indexOf(8, 3)
+// // )
 
 
-///// Đề bài: Tìm và hiển thị được 3 vị trí số 8 đang ở trong mảng lên màn hình console
-let last1 = arr.indexOf(8);//2
-let last2 = arr.indexOf(8, last1 + 1)
-let last3 = arr.indexOf(8, last2 + 1)
-console.log(last1, last2, last3);
+// ///// Đề bài: Tìm và hiển thị được 3 vị trí số 8 đang ở trong mảng lên màn hình console
+// let last1 = arr.indexOf(8);//2
+// let last2 = arr.indexOf(8, last1 + 1)
+// let last3 = arr.indexOf(8, last2 + 1)
+// console.log(last1, last2, last3);
 
