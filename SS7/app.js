@@ -8,8 +8,8 @@
 
 
 /*
-Câu 10: Thực hiện duyệt string sau đây: “ High knowledge, high return”. 
-Chuyển đổi string về dạng array, xóa bỏ các phần tử có giá trị là “ “; 
+Câu 10: Thực hiện duyệt string sau đây: “ High knowledge, high return”.
+Chuyển đổi string về dạng array, xóa bỏ các phần tử có giá trị là “ “;
 và các phần tử có giá trị là chữ hoa chuyển thành chữ thường.
 */
 // let str = " High knowledge, high return";
@@ -26,29 +26,29 @@ và các phần tử có giá trị là chữ hoa chuyển thành chữ thườn
 ///// List lại kiến thức 
 /*
 Kiến thức liên quan tới Class
-1. Thuộc tính 
+1. Thuộc tính
 2. Phương thức
-3. Kế thừa 
+3. Kế thừa
 
 */
 
 
 //// Tính kế thừa
-class Person {
-  //// Khởi tạo thuộc tính
-  constructor(_name, _age, _address, _cccd, _jobs) {
-    this.name = _name;
-    this.age = _age;
-    this.address = _address;
-    this.cccd = _cccd
-    this.jobs = _jobs
+// class Person {
+//   //// Khởi tạo thuộc tính
+//   constructor(_name, _age, _address, _cccd, _jobs) {
+//     this.name = _name;
+//     this.age = _age;
+//     this.address = _address;
+//     this.cccd = _cccd
+//     this.jobs = _jobs
 
-  }
+//   }
 
-  say() {
-    return `I'am Person and my name is ${this.name}`
-  }
-}
+//   say() {
+//     return `I'am Person and my name is ${this.name}`
+//   }
+// }
 
 // let QuynhThu = new Person("Quỳnh Thư", 18, "Quảng Ngãi", "0123456789", "Student");
 // console.log("QuynhThu: ", QuynhThu);
@@ -78,40 +78,81 @@ class Person {
 
 // Chữa bài: 
 /// Bài 12: 
-class Hinh {
-  constructor(chieuRong, chieuDai) {
-    this.chieuRong = chieuRong;
-    this.chieuDai = chieuDai
-  }
-}
+// class Hinh {
+//   constructor(chieuRong, chieuDai) {
+//     this.chieuRong = chieuRong;
+//     this.chieuDai = chieuDai
+//   }
+// }
 
-/// Class hinhtamgiac
-class HinhTamGiac extends Hinh {
-  constructor(chieuRong, chieuDai) {
-    super(chieuRong, chieuDai)
-    // chieu dai: chiều cao
-    // chieu rong: Cạnh đáy
-  }
+// /// Class hinhtamgiac
+// class HinhTamGiac extends Hinh {
+//   constructor(chieuRong, chieuDai) {
+//     super(chieuRong, chieuDai)
+//     // chieu dai: chiều cao
+//     // chieu rong: Cạnh đáy
+//   }
 
-  area() {
-    return this.chieuDai * this.chieuRong / 2
+//   area() {
+//     return this.chieuDai * this.chieuRong / 2
 
-  }
-}
+//   }
+// }
 
-class HinhChuNhat extends Hinh {
-  constructor(chieuRong, chieuDai) {
-    super(chieuRong, chieuDai)
-    // chieu dai: chiều cao
-    // chieu rong: Cạnh đáy
-  }
+// class HinhChuNhat extends Hinh {
+//   constructor(chieuRong, chieuDai) {
+//     super(chieuRong, chieuDai)
+//     // chieu dai: chiều cao
+//     // chieu rong: Cạnh đáy
+//   }
 
-  area() {
-    return this.chieuDai * this.chieuRong
+//   area() {
+//     return this.chieuDai * this.chieuRong
 
-  }
-}
+//   }
+// }
 
-let hinhtg1 = new HinhTamGiac(3, 4);
-console.log(hinhtg1.area());
+// let hinhtg1 = new HinhTamGiac(3, 4);
+// console.log(hinhtg1.area());
 /// Tương tự với HCN
+
+
+
+///// Bài 11: 
+class People {
+  constructor(name, age, address) {
+    this.name = name
+    this.age = age
+    this.address = address
+  }
+
+  /// Thay đổi, lưu thông tin
+  set(prop, value) {
+    this[prop] = value
+    return this[prop]
+  }
+
+  // Xuất thông tin
+  get(prop) {
+    return this[prop]
+  }
+}
+
+
+class Student extends People {
+  constructor(name, age, address, id, math, physical, chemistry) {
+    super(name, age, address);
+    this.id = id;
+    this.math = math;
+    this.physical = physical;
+    this.chemistry = chemistry;
+  }
+
+  GPA() {
+    return (this.math + this.physical + this.chemistry) / 3
+  }
+}
+
+let DuyLong = new Student("Duy Long", 17, "Bắc Ninh", "123", 10, 10, 9.5);
+console.log("DuyLong: ", DuyLong);
+
