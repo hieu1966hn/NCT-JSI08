@@ -55,22 +55,63 @@ class Person {
 
 
 /// Kế thừa từ class Person;
-class Student extends Person {
-  constructor(_name, _age, _address, _cccd, _jobs, _class, _idStudent) {
-    /// Từ khóa kế thừa: Super();
-    super(_name, _age, _address, _cccd, _jobs);
-    this.class = _class;
-    this.idStudent = _idStudent
-  }
+// class Student extends Person {
+//   constructor(_name, _age, _address, _cccd, _jobs, _class, _idStudent) {
+//     /// Từ khóa kế thừa: Super();
+//     super(_name, _age, _address, _cccd, _jobs);
+//     this.class = _class;
+//     this.idStudent = _idStudent
+//   }
 
 
-  //// Kế thừa phương thức 
-  say() {
-    super.say();
-    return super.say() + `and I am learning code From MindX SchooL`
+//   //// Kế thừa phương thức 
+//   say() {
+//     super.say();
+//     return super.say() + `and I am learning code From MindX SchooL`
+//   }
+// }
+
+// let QuynhThu = new Student("Quỳnh Thư", 18, "Quảng Ngãi", "0123456789", "Student", "12T1", "0234");
+// console.log("QuynhThu: ", QuynhThu);
+
+
+
+// Chữa bài: 
+/// Bài 12: 
+class Hinh {
+  constructor(chieuRong, chieuDai) {
+    this.chieuRong = chieuRong;
+    this.chieuDai = chieuDai
   }
 }
 
-let QuynhThu = new Student("Quỳnh Thư", 18, "Quảng Ngãi", "0123456789", "Student", "12T1", "0234");
-console.log("QuynhThu: ", QuynhThu);
+/// Class hinhtamgiac
+class HinhTamGiac extends Hinh {
+  constructor(chieuRong, chieuDai) {
+    super(chieuRong, chieuDai)
+    // chieu dai: chiều cao
+    // chieu rong: Cạnh đáy
+  }
 
+  area() {
+    return this.chieuDai * this.chieuRong / 2
+
+  }
+}
+
+class HinhChuNhat extends Hinh {
+  constructor(chieuRong, chieuDai) {
+    super(chieuRong, chieuDai)
+    // chieu dai: chiều cao
+    // chieu rong: Cạnh đáy
+  }
+
+  area() {
+    return this.chieuDai * this.chieuRong
+
+  }
+}
+
+let hinhtg1 = new HinhTamGiac(3, 4);
+console.log(hinhtg1.area());
+/// Tương tự với HCN
