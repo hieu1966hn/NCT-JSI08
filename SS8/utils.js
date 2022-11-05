@@ -1,4 +1,3 @@
-// https://blog.napthedev.com/post/10-doan-code-javascript-huu-ich#4.-tinh-khoang-thoi-gian-da-qua
 export const calculateElapsedTime = (timeCreated) => {
   const created = new Date(timeCreated).getTime();
   let periods = {
